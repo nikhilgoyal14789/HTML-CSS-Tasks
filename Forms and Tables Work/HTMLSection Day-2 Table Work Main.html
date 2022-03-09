@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Work</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            /* border-radius:10px; */
+            /* border-style: dotted; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <p style="font-family: 'Times New Roman', Times, serif; color: brown; font-size: 60px; text-align: center;">My
+        Details</p>
+    <br>
+
+    <table align="center">
+        <colgroup>
+            <col span="2" style="background-color: pink;">
+            <col span="2" style="background-color: bisque;">
+            <col span="2" style="background-color: salmon;">
+            <col span="2" style="background-color: bisque;">
+            <col span="1" style="background-color: violet;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th colspan="2">Full Name</th>
+                <th colspan="2">Address</th>
+                <th rowspan="2">Organization Name</th>
+                <th rowspan="2">Designation</th>
+                <th colspan="2">College Details</th>
+                <th rowspan="2">Contact Number</th>
+            </tr>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Correspondence Address</th>
+                <th>Permanent Address</th>
+                <th>College Name</th>
+                <th>University Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nikhil</td>
+                <td>Goyal</td>
+                <td>Kiraoli</td>
+                <td>Agra</td>
+                <td>Unthinkable Solutions LLP</td>
+                <td>Junior Associate IT</td>
+                <td>Galgotias University</td>
+                <td>Galgotias University</td>
+                <td>+91 1234</td>
+            </tr>
+
+            <tr>
+                <td>Nikhil</td>
+                <td>Goyal</td>
+                <td>Kiraoli</td>
+                <td>Agra</td>
+                <td>Unthinkable Solutions LLP</td>
+                <td>Junior Associate IT</td>
+                <td>Galgotias University</td>
+                <td>Galgotias University</td>
+                <td>+91 1234</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>

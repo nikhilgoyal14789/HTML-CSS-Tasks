@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+    <style>
+        table,th,td
+        {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            /* border-radius:10px; */
+            /* border-style: dotted; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <colgroup>
+            <col span="2" style="background-color: pink;">
+            <col span="2" style="background-color: bisque;">
+            <col span="1" style="background-color: blueviolet;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th colspan="2">Full Name</th>
+                <th colspan="2">Address</th>
+                <th rowspan="2">Contact Number</th>
+            </tr>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Correspondence Address</th>
+                <th>Permanent Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nikhil</td>
+                <td>Goyal</td>
+                <td>Kiraoli</td>
+                <td>Agra</td>
+                <td>+91 1234</td>
+            </tr>
+
+            <tr>
+                <td>Nikhil1</td>
+                <td>Goyal1</td>
+                <td>Kiraoli1</td>
+                <td>Agra1</td>
+                <td>+91 12345678</td>
+            </tr>
+          
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>

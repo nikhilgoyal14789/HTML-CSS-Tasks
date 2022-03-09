@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <style>
+        label,legend 
+        {
+            font-weight: bold;
+            font-size: 17px;
+        }
+        fieldset
+        {
+            background-color:bisque;
+        }
+
+    </style>
+</head>
+
+<body>
+    <script>
+        function submitFunction()
+        {
+            let name=document.getElementById("name").value;
+            let userid=document.getElementById("uid").value;
+            let result="User Details\n\nName is "+name+"\n\n"+"User Id is "+userid+"\n";
+            if(name!="" && userid!="")
+                alert(result);
+        }
+
+        function resetFunction()
+        {
+            alert("Reset Successfull");
+        }
+    </script>
+    <br><br>
+    <form method="GET">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <table width="60%">
+                <tr>
+                    <td><label for="name">Enter your Full Name</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><br></td>
+                </tr>
+
+                <tr>
+                    <td><label for="uid">Enter your User Id</label></td>
+                    <td><input type="text" id="uid" name="uid" required></td>
+                </tr>
+                <tr>
+                    <td><br></td>
+                </tr>
+
+                <tr>
+                    <td><label for="pass">Enter your Password</label></td>
+                    <td><input type="password" id="pass" name="pass" required></td><br>
+                </tr>
+                <tr>
+                    <td><br></td>
+                </tr>
+
+                <tr>
+                    <td><label for="gender">Enter your Gender</label></td>
+                    <td>
+                        <input type="radio" id="gender" name="gender" value="Male" required>Male
+                        <input type="radio" id="gender" name="gender" value="Female" required>Female<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><br></td>
+                </tr>
+
+                <tr>
+                    <td><label for="hobbies">Enter your Hobbies</label></td>
+                    <td>
+                        <input type="checkbox" id="hobbies1" name="hobbies1" value="Singing Songs">Singing Songs<br>
+                        <input type="checkbox" id="hobbies2" name="hobbies2" value="Watching Movies">Watching Movies<br>
+                        <input type="checkbox" id="hobbies3" name="hobbies3" value="Reading Books">Reading Books<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><br></td>
+                </tr>
+
+                <tr>
+                    <td><label for="state">Enter your State</label></td>
+                    <td>
+                        <select id="state">
+                            <option value="Select any State" selected>Select any State</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><br></td>
+                </tr>
+
+                <tr>
+                    <td><label for="remember">Remember Me</label></td>
+                    <td>
+                        <input type="radio" id="remember" name="remember" value="Remember Me">Remember Me<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><br></td>
+                </tr>
+
+                <tr>
+                    <td><input type="submit" value="Submit" onclick="submitFunction();"></td>
+                    <td><input type="reset" value="Reset" onclick="resetFunction();"></td>
+                </tr>
+
+            </table>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
