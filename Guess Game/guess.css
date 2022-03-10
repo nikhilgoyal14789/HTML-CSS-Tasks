@@ -1,0 +1,31 @@
+h1
+{
+    text-align: center;
+    color: blueviolet;
+    font-size: 50px;
+}
+
+div 
+{
+    background-color: green;
+    color: orange;
+    display: block;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+#number
+{
+    border-radius: 20px;
+    border-color: black;
+    text-align: center;
+}
+
+#check,#reset
+{
+    background-color: blue;
+    color: white;
+    width: 100px;
+    border-radius: 20px;
+    border-color: white;
+}

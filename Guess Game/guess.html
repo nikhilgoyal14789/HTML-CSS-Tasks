@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+    <link rel="stylesheet" href="guess.css">
+    <script src="guess.js"></script>
+</head>
+
+<body>
+    <h1>Guess Game</h1>
+    <fieldset>
+        <legend><b>Guess Game</b></legend><br>
+        <form>
+            <label for="number">Enter a Number (Range 1-60) : </label><br><br>
+            <input type="text" name="number" id="number" placeholder="Enter Your Number">
+            <input type="button" id="check" value="Check" onclick="myFunction()">
+            <input type="button" id="reset" value="Reset" onclick="myFunctionReset()">
+        </form>
+        <br>
+        <div>
+            <p id="result">Result:</p>
+        </div>
+    </fieldset>
+
+</body>
+
+</html>
