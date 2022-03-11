@@ -1,0 +1,37 @@
+div
+{
+    width: 400px;
+    height: auto;
+    border: 4px solid black;
+    padding: 20px;
+    margin-left: 80px;
+    text-align: center;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 40px;
+    display: none;
+}
+
+h1
+{
+    text-align: center;
+    margin-left: 100px;
+    font-weight: bolder;
+    text-decoration: underline;
+    color: brown;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.btn
+{
+    background-color: blue;
+    width: 160px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: brown;
+    text-align: center;
+    margin-left: 220px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
